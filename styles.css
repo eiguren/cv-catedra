@@ -1,0 +1,43 @@
+/* Elegante y sobrio para CV académico largo */
+:root {
+  --accent: #17324d;
+  --muted: #5b6773;
+}
+
+body {
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4 {
+  color: var(--accent);
+  letter-spacing: 0.01em;
+}
+
+.subtitle, .quarto-title-meta, .author, .date {
+  color: var(--muted);
+}
+
+table {
+  font-size: 0.97rem;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.2rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cv-grid div:nth-child(odd) {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.section-note {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.callout-note {
+  border-left-color: var(--accent);
+}
